@@ -1,3 +1,61 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Italic'),
+    url(./assets/fonts/Poppins-Italic.ttf) format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Bold'),
+    url(./assets/fonts/Poppins-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins ExtraBoldItalic'),
+    url(./assets/fonts/Poppins-ExtraBoldItalic.ttf) format('truetype');
+  font-style: italic;
+  font-weight: 800;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+
+  --font-size: 32px;
+  --font-family: 'Poppins', 'Arial', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-exbold: 800;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  font-style: italic;
+}
+
+.separator__button {
+  background-color: blueviolet;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

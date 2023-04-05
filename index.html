@@ -14,10 +14,71 @@
     <title>Frontend Mentor | Age calculator app</title>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    Day DD Month MM Year YYYY -- years -- months -- days
+    <div class="content">
+      <div class="inputs-list">
+        <div class="input">
+          <div class="input__name">day</div>
+          <input
+            class="input__input"
+            id="day"
+            name="day"
+            type="text"
+            placeholder="DD"
+            autocomplete="new-password"
+          />
+          <div class="input__error"></div>
+        </div>
+        <div class="input">
+          <div class="input__name">month</div>
+          <input
+            class="input__input"
+            id="month"
+            name="month"
+            type="text"
+            placeholder="MM"
+            autocomplete="new-password"
+          />
+          <div class="input__error"></div>
+        </div>
+        <div class="input">
+          <div class="input__name">year</div>
+          <input
+            class="input__input"
+            id="year"
+            name="year"
+            type="text"
+            placeholder="YYYY"
+            autocomplete="new-password"
+          />
+          <div class="input__error"></div>
+        </div>
+      </div>
+      <div class="separator">
+        <div class="separator__line"></div>
+        <img
+          class="separator__button"
+          src="./assets/images/icon-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="date-result">
+        <div class="row">
+          <div class="row__number" id="years">--</div>
+          <div class="row__name">years</div>
+        </div>
+        <div class="row">
+          <div class="row__number" id="months">--</div>
+          <div class="row__name">months</div>
+        </div>
+        <div class="row">
+          <div class="row__number" id="days">--</div>
+          <div class="row__name">days</div>
+        </div>
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
