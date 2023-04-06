@@ -78,7 +78,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   padding: 40px;
 
   background-color: var(--color-content-bg);
@@ -89,13 +89,69 @@ body {
 .inputs-list {
   display: flex;
 }
+
 .input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
+
+.input:not(:last-child) {
+  margin-right: 20px;
+}
+
+.input--error > .input__name {
+  color: var(--color-error);
+}
+
+.input--error > .input__input {
+  border: 1px solid var(--color-error);
+}
+
 .input__name {
+  margin-bottom: 6px;
+  color: var(--color-line);
+  font-size: 0.34rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .input__input {
+  padding: 10px;
+  width: 110px;
+  border: 1px solid var(--color-border);
+  border-radius: calc(var(--border-radius) - 14px);
+
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+
+  transition: border ease-out 0.3s;
+  cursor: pointer;
 }
+
+.input__input:hover {
+  border: 1px solid var(--color-line);
+}
+
+.input__input::placeholder {
+  color: var(--color-line);
+}
+
+.input__input:focus {
+  outline: none;
+  border: 1px solid var(--color-accent);
+}
+
 .input__error {
+  position: absolute;
+  bottom: -18px;
+  margin-top: 6px;
+
+  color: var(--color-error);
+  font-size: 0.3rem;
 }
 
 .separator {
@@ -109,12 +165,20 @@ body {
 }
 .separator__button {
   padding: 16px;
-  background-color: blueviolet;
+  background-color: var(--color-accent);
   border-radius: 50%;
+
+  transition: background ease-in-out 0.4s;
+  cursor: pointer;
+}
+
+.separator__button:hover {
+  background-color: var(--color-text);
 }
 
 .date-result {
 }
+
 .row {
   display: flex;
   font-size: 2rem;
