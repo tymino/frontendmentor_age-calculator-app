@@ -20,7 +20,7 @@ const convertDateFromInputs = () => {
   const month = inputMonth.value;
   const year = inputYear.value;
 
-  return `${year}.${month}.${day}`;
+  return `${year}/${month}/${day}`;
 };
 
 const updateInput = (target, maxValue, errorText, length = 2) => {
